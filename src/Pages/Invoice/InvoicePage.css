@@ -1,0 +1,61 @@
+.invoiceContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 100px;
+    font-size: 22px;
+    padding-inline: 40px;
+}
+.invoiceContainer .invoiceTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 830px;
+    margin-bottom: 30px;
+}
+.thanksContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+table,td,tr{
+    
+    border: 2px solid black;
+}
+td,th{
+    border: 2px solid black;
+   
+    text-align: center;
+    padding: 5px;
+    padding-inline: 10px;
+}
+
+.totalTd{
+    text-align: end;
+    padding: 6px;
+    padding-right: 15px;
+}
+.invoiceContainer .invoiceHeading{
+    font-size: 30px;
+    font-weight: bold;
+}
+th{
+    font-size: 24px;
+}
+#printBtn{
+    margin-right: 900px;
+}
+.prodRow .imageTd{
+    width: 100px !important;
+}
+.AllTd{
+    width: 500px;
+}
+.totalTd span,.totalTd b{
+    
+    font-size: 24px;
+}

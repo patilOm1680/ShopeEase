@@ -11,12 +11,12 @@ const PaymentForm = () => {
     }, []);
 
     const amount = useSelector((state) => state.cartItems.total);
-    const dispatch = useDispatch();
+    
     const navigate = useNavigate();
     const handlePayClick = () => {
         console.log(`User paid Rs.${amount}`)
         console.log(`User successfully purchased the products.`)
-        dispatch(clearCartItems());
+        
         navigate('/payment-success')
     }
 

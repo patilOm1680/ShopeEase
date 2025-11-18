@@ -14,6 +14,8 @@ import OrderSummary from '../OrderSummary/OrderSummary.jsx';
 import AddressForm from '../Form/AddressForm.jsx';
 import { useNavigate } from 'react-router-dom';
 import MonetizationOnRoundedIcon from '@mui/icons-material/MonetizationOnRounded';
+import { useReactToPrint } from "react-to-print";
+import { useRef } from "react";
 
 const steps = ['Confirm Products', 'Order Summary', 'Delivery Details'];
 
@@ -38,6 +40,7 @@ const Cart = () => {
       navigate('/payment')
       return;
     }
+
     let newSkipped = skipped;
     if (isStepSkipped(activeStep)) {
       newSkipped = new Set(newSkipped.values());
@@ -55,20 +58,29 @@ const Cart = () => {
     setActiveStep(0);
   };
   // console.log(total)
-
+  const contentRef = useRef();
+  const reactToPrintFn = useReactToPrint({ contentRef });
   const getStepContent = (stepIndex) => {
     switch (stepIndex) {
       case 0:
         return (
 
-          <div style={{ marginLeft: "27px",borderBottom:"1px dotted #aeb0af",paddingBottom:"10px" }}>
+          <div style={{ marginLeft: "27px", borderBottom: "1px dotted #aeb0af", paddingBottom: "10px" }}>
             {cartItems.map((obj) => (
               <CartCard obj={obj} cartItems={cartItems} key={obj.id} />
             ))}
             <div className='parentTotalAmountContainer'>
-              <p className='totalAmountContainer'><MonetizationOnRoundedIcon fontSize="large"  sx={{marginRight:"5px",color:'#2774AE'}}/><b>Total:</b> <span>&#8377;{total}</span></p>
+              <p className='totalAmountContainer'><MonetizationOnRoundedIcon fontSize="large" sx={{ marginRight: "5px", color: '#2774AE' }} /><b>Total:</b> <span>&#8377;{total}</span></p>
             </div>
-            
+
+
+            {/* 
+                <div>
+                    <button onClick={reactToPrintFn}>Print</button>
+                    <div ref={contentRef} className='sampleCon'>Content to print</div>
+                </div> 
+            */}
+
           </div>
         );
       case 1:
@@ -133,9 +145,9 @@ const Cart = () => {
                         Back
                       </Button>
                     }
-                    
+
                     <Box sx={{ flex: '1 1 auto' }} />
-                    
+
                     <Button onClick={handleNext} sx={{ color: "white", backgroundColor: "#2774AE", width: "auto" }}>
                       {activeStep === steps.length - 1 ? 'Continue to Payment' : 'Next'}
                     </Button>

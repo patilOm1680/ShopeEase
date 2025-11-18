@@ -22,6 +22,10 @@
     position: absolute;
     bottom: -70px;
 }
+/* .sampleCon{
+    background-color: green;
+    display: none;
+} */
 .parentTotalAmountContainer{
     position: relative;
 }

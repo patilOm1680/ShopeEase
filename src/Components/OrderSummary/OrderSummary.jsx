@@ -11,7 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import CartCard from '../Cart card/CartCard';
 import "./OrderSummary.css";
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
@@ -36,6 +36,7 @@ const OrderSummary = () => {
   const total = useSelector((state) => state.cartItems.total);
   const [expanded, setExpanded] = React.useState(false);
 
+  
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };

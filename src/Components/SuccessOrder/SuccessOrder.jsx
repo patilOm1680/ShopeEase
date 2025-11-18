@@ -4,6 +4,9 @@ import "./SuccessOrder.css";
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import { useNavigate } from "react-router-dom";
 import Spinner from "../Payment/Spinner";
+import { useDispatch } from "react-redux";
+import { clearCartItems } from "../../features/cart/CartSlice";
+import LocalPrintshopIcon from '@mui/icons-material/LocalPrintshop';
 
 const SuccessOrder=()=> {
   const [loading,setLoading]=useState(true)
@@ -14,9 +17,17 @@ const SuccessOrder=()=> {
     
   }, []);
   const navigate=useNavigate();
+  const dispatch = useDispatch();
+
   const handleShopping = () => {
+    dispatch(clearCartItems());
     navigate('/')
   }
+
+  const handleRecieptClick = () => {
+    navigate('/invoice')
+  }
+  
   
   return (
     <>
@@ -49,8 +60,8 @@ const SuccessOrder=()=> {
           <a href="#" className="link">
             <LocalShippingIcon sx={{marginRight:"8px"}}/>  Track Your Order
           </a>
-          <a href="#" className="link">
-            <SupportAgentIcon sx={{marginRight:"8px"}}/> Customer Support
+          <a href="#" className="link" onClick={handleRecieptClick}>
+            <LocalPrintshopIcon sx={{marginRight:"8px"}}/> Print Reciept
           </a>
         </div>
 

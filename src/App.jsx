@@ -12,6 +12,7 @@ import BuyNow from './Components/Buy/BuyNow.jsx'
 import PaymentForm from './Components/Payment/PaymentForm.jsx'
 import SuccessOrder from './Components/SuccessOrder/SuccessOrder.jsx'
 import SearchResultPage from './Pages/SearchResultPage/SearchResultPage.jsx'
+import InvoicePage from './Pages/Invoice/InvoicePage.jsx'
 
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
         <Route path='/payment' element={<PaymentForm />} />
         <Route path='/payment-success' element={<SuccessOrder />} />
         <Route path='/searchResults' element={<SearchResultPage />} />
+        <Route path='/invoice' element={<InvoicePage />} />
       </Routes>
 
     </div>
