@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#logoHeading{
+  font-family: "Exo", sans-serif;
+  font-style: italic;
+}
+.navbar {
+  /* margin-left: 40px; */
+  background-color: #F8F9FA !important;
+  color: #222 !important;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+  padding: 0 10px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 40px !important */
+}
+.logo {
+  font-weight: 700 !important;
+  color: #2774AE !important;
+  letter-spacing: 1px;
+}
+
+.navLinks {
+  margin-left: 80px;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  /* margin-left: 100px !important; */
+}
+
+.navButton {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease-in-out;
+}
+.navButton::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #2774AE;
+  transition: width 0.3s ease-in-out;
+}
+
+.navButton:hover {
+  color: #2774AE;
+}
+
+.navButton:hover::after {
+  width: 100%;
+}
+
+.navButton.active {
+  color: #2774AE;
+}
+
+.navButton.active::after {
+  width: 100%;
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menuButton {
+  display: none !important;
+}
+
+.drawer-box {
+  width: 250px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.drawer-item {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.drawer-item:hover {
+  color: #2774AE;
+}
+
+.drawer-active {
+  color: #2774AE;
+  font-weight: 600;
+}
+
+.close-icon {
+  position: absolute !important;
+  right: 10px;
+  top: 10px;
+}
+
+@media (max-width: 900px) {
+  .navLinks {
+    display: none;
+  }
+
+  .menuButton {
+    display: inline-flex !important;
+  }
+
+  .iconGroup {
+    gap: 0.2rem;
+  }
+  .navSearchBarContainer{
+    display: none;
+  }
+}

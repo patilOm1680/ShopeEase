@@ -1,0 +1,183 @@
+.page-wrapPayment {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #f9fafb;
+  padding: 48px 24px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.PaymentcardForm {
+    margin-top: 50px;
+  width: 550px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 36px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.PaymentcardForm .card-header {
+  margin-bottom: 22px;
+}
+
+.PaymentcardForm .title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+/* Form styling */
+.PaymentcardForm .form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.PaymentcardForm .label {
+  font-size: 13px;
+  color: #374151;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.PaymentcardForm .payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Payment method box */
+.PaymentcardForm .option {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  background: #fafbff;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.PaymentcardForm .option:hover {
+  border-color: #c7b8ff;
+}
+
+.PaymentcardForm .option.active {
+  border-color: #2774AE;
+  background: #f6f4ff;
+  box-shadow: 0 0 0 2px rgba(110, 86, 249, 0.15);
+}
+
+.PaymentcardForm .option input {
+  position: absolute;
+  opacity: 0;
+}
+
+.PaymentcardForm .radio {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  flex-shrink: 0;
+  margin-top: 3px;
+  position: relative;
+}
+
+.PaymentcardForm .option.active .radio {
+  border-color: #2774AE;
+  background: radial-gradient(#2774AE 50%, transparent 51%);
+}
+
+.PaymentcardForm .option-title {
+  font-size: 14px;
+  color: #111827;
+  font-weight: 600;
+}
+
+.PaymentcardForm .option-subtitle {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Inputs */
+.PaymentcardForm .input {
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f8f9fb;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.PaymentcardForm .input:focus {
+  border-color: #a89af5;
+  box-shadow: 0 0 0 4px rgba(168, 154, 245, 0.15);
+  background: #fff;
+}
+
+/* Icon inside input */
+.PaymentcardForm .input-with-icon {
+  position: relative;
+}
+
+.PaymentcardForm .input-with-icon .icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+/* Row for expiration and CVV */
+.PaymentcardForm .row .two-cols {
+  display: flex;
+  gap: 12px;
+}
+.PaymentcardForm .row .two-cols input{
+    width: 100px;
+}
+.PaymentcardForm .col {
+  flex: 1;
+}
+
+.PaymentcardForm .info {
+  color: #9ca3af;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Pay button */
+.PaymentcardForm .pay-btn {
+  height: 48px;
+  background: #2774AE;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+#exp, #cvv{
+    width: 230px;
+}
+.PaymentcardForm .pay-btn:hover {
+  background: #5a44d6;
+}
+
+/* SSL text */
+.PaymentcardForm .ssl {
+  margin-top: 14px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 13px;
+}

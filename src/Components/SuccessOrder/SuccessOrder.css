@@ -1,0 +1,135 @@
+.page-wrapSucess {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 64px 24px;
+  background: #f9fafb;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.successCard {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px 48px;
+  border-radius: 12px;
+  max-width: 520px;
+  width: 100%;
+  margin-top: 60px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.successCard .icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #d1fae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.successCard .checkmark {
+  color: #10b981;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.successCard .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin: 12px 0 8px 0;
+}
+
+.successCard .subtitle {
+  margin-top: 35px;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+.successCard .order-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f9fafc;
+  padding: 16px 24px;
+  margin-bottom: 28px;
+}
+
+.successCard .order-info {
+  text-align: left;
+}
+
+.successCard .label {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+.successCard .value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.successCard .divider {
+  width: 1px;
+  height: 40px;
+  background: #e5e7eb;
+}
+
+.successCard .links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.successCard .link {
+  text-decoration: none;
+  color: #2774AE;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.successCard .link:hover {
+  text-decoration: underline;
+}
+
+.successCard .btn {
+  background: #2774AE;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.successCard .btn:hover {
+  background: #2774AE;
+}
+
+@media (max-width: 480px) {
+  .successCard {
+    padding: 32px 24px;
+  }
+
+  .successCard .order-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .successCard .divider {
+    display: none;
+  }
+}

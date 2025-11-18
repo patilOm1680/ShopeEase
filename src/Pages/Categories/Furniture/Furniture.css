@@ -1,0 +1,19 @@
+.furnitureContainer{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-inline: 32px;
+    margin-top: 65px;
+    background-color: white;
+    margin-inline: 120px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+    .furnitureContainer{
+        margin-inline: 0px;
+        padding-inline: 13px;
+    }
+}

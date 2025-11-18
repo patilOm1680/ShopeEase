@@ -1,0 +1,62 @@
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border: 2px solid rgb(242, 242, 242); */
+    /* border: 10px solid black; */
+    margin-top: 10px;
+    /* padding-top: 20px; */
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-block: 10px;
+    /* transition: all 2s ease-out; */
+
+    
+}
+
+.card:hover{
+  transform: scale(1.02);
+}
+
+
+
+.CardDes{
+    height: 40px;
+    /* background-color: green; */
+    /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* text-align: justify; */
+
+}
+.cardTitle{
+   white-space:nowrap;
+   height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* text-align: justify; */
+}
+.priceContainer{
+  display: flex;
+  justify-content:flex-start;
+  gap: 10px;
+  align-items: center;
+  margin-top: 5px;
+}
+.discount{
+  text-decoration: line-through;
+  color: grey;
+}
+.discountPercent{
+  color: green;
+}
+.cardContent{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 900px) {
+  
+}

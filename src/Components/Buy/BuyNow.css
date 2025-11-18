@@ -1,0 +1,81 @@
+.buyContainer {
+    background-color: white;
+    margin-top: 65px;
+    max-Width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    /* margin: 40px auto; */
+    border: 1px solid #ddd;
+    border-Radius: 12px;
+    padding: 20px;
+    box-Shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+.buyWrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buyContainer .quantity{
+    margin: 0 15px;
+    font-size: 18px;
+}
+.buyContainer img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.buyContainer .title {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.buyContainer .des {
+    color:rgb(63, 63, 63);
+    text-align: justify;
+}
+
+.buyContainer .price {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.buyContainer .btns {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.buyContainer .btns .btn {
+    background-Color: #eee;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-Size: 18px;
+    border-Radius: 5px;
+}
+
+.buyContainer .total {
+    margin-top: 10px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.buyContainer .buyBtn {
+    width: 100%;
+    padding: 10px;
+    margin-Top: 15px;
+    background-Color: #007bff;
+    color: white;
+    font-Size: 16px;
+    border: none;
+    border-Radius: 6px;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.detailsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagesContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagesContainer img{
+    height: 220px;
+}
