@@ -7,7 +7,6 @@ import shoes from "../../assets/category/shoes.avif"
 import tv from "../../assets/category/tv.jpeg"
 import aeroplane from "../../assets/category/aeroplane.webp"
 import { useNavigate } from 'react-router-dom'
-
 const Category = () => {
   const navigate=useNavigate();
 

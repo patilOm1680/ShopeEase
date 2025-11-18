@@ -1,0 +1,2 @@
+export const PRIMARY_COLOR="#2774AE"
+export const SECONDARY_COLOR="#E6F0FE"

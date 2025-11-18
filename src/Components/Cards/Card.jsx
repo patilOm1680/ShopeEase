@@ -8,6 +8,7 @@ import FlashOnIcon from '@mui/icons-material/FlashOn';
 // import { green } from '@mui/material/colors';
 // import "./App.css"
 
+import {PRIMARY_COLOR,SECONDARY_COLOR} from "../../Constants/Colors"
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import "./card.css"
 import { useNavigate } from "react-router-dom";
@@ -96,12 +97,12 @@ const CardComponent = ({ obj }) => {
 
         </CardContent>
         <CardActions>
-          <Button variant="contained" sx={{ backgroundColor: "#E6F0FE", fontWeight: "bold", paddingLeft: 1, width: "50%", color: "#2774AE", border: "1px solid #2774AE" }} onClick={handleAddToCart}><ShoppingCartIcon sx={{ marginRight: 1, display: { sm: "inline", xs: "none" } }} />
+          <Button variant="contained" sx={{ backgroundColor: `${SECONDARY_COLOR}`, fontWeight: "bold", paddingLeft: 1, width: "50%", color: "#2774AE", border: "1px solid #2774AE" }} onClick={handleAddToCart}><ShoppingCartIcon sx={{ marginRight: 1, display: { sm: "inline", xs: "none" } }} />
             {(isPresentInCart == true) ? "GO TO CART" : "ADD TO CART"}
           </Button>
 
 
-          <Button variant="contained" sx={{ backgroundColor: "#2774AE", fontWeight: "bold", paddingLeft: 1, width: "50%" }} onClick={handleBuyClick}><FlashOnIcon sx={{ marginRight: 1, marginLeft: 0 }} />BUY NOW </Button>
+          <Button variant="contained" sx={{ backgroundColor: `${PRIMARY_COLOR}`, fontWeight: "bold", paddingLeft: 1, width: "50%" }} onClick={handleBuyClick}><FlashOnIcon sx={{ marginRight: 1, marginLeft: 0 }} />BUY NOW </Button>
 
         </CardActions>
       </Card>
