@@ -3,8 +3,7 @@
 
 ShopeEase is an Ecommerce platform build with React.js and Material UI (MUI). 
 
-## Screenshots
+Live at https://keyist-frontend.web.app/ 🔑
 
-Home Page
 ![App Screenshot](./src/assets/screenShots/HomeSS.png)
 
