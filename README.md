@@ -55,7 +55,7 @@ ShopeEase/
 │   │           └── CartSlice.js
 │   └── store/
 │       └── store.js
-
+```
 
 ## 🧰 Tech Stack
 - React.js
