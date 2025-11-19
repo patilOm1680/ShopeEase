@@ -1,4 +1,4 @@
-# 🛒 ShopeEase || Ecommerce Web App
+# 🛒 ShopeEase | Ecommerce Web App
 
 ShopeEase is an E-commerce web application built using **React**, **Redux Toolkit**, and **Vite**. It provides a clean UI, product browsing, cart management, and a modular structure suitable for scaling into a full-featured shopping platform.
 
@@ -27,32 +27,34 @@ ShopeEase is designed as a lightweight online store interface where users can br
 
 ## 📂 Project Structure
 
+```plaintext
 ShopeEase/
 ├── index.html
 ├── eslint.config.js
 ├── package.json
 ├── vite.config.js
 ├── public/
-└── src/
-    ├── App.jsx
-    ├── App.css
-    ├── main.jsx
-    ├── assets/
-    ├── components/
-    │   ├── Navbar.jsx
-    │   ├── Footer.jsx
-    │   ├── ProductList.jsx
-    │   ├── Cart.jsx
-    │   ├── ProductCard.jsx
-    │   └── ...
-    ├── data/
-    │   └── data.js
-    ├── features/
-    │   └── products/
-    │       ├── ProductSlice.js
-    │       └── cart/CartSlice.js
-    └── store/
-        └── store.js
+├── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   ├── assets/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── ProductList.jsx
+│   │   ├── Cart.jsx
+│   │   ├── ProductCard.jsx
+│   │   └── ...
+│   ├── data/
+│   │   └── data.js
+│   ├── features/
+│   │   └── products/
+│   │       ├── ProductSlice.js
+│   │       └── cart/
+│   │           └── CartSlice.js
+│   └── store/
+│       └── store.js
 
 
 ## 🧰 Tech Stack
