@@ -93,7 +93,7 @@ Uses Dummy API- https://dummyjson.com/products?limit=100
 
 
 ## 📄 License
-No license included; can generate one upon request.
+No license ;
 
 
 
