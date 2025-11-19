@@ -8,6 +8,7 @@ import { useRef } from "react";
 
 import Button from '@mui/material/Button';
 import InvoiceCard from '../../Components/InvoiceCard/InvoiceCard';
+import { useNavigate } from 'react-router-dom';
 const InvoicePage = () => {
     const contentRef = useRef();
 const reactToPrintFn = useReactToPrint({ contentRef });
@@ -15,6 +16,11 @@ const reactToPrintFn = useReactToPrint({ contentRef });
     const total=useSelector((state)=>state.cartItems.total)
     const cartItems = useSelector((state) => state.cartItems.value)
     const date=new Date();
+    const navigate=useNavigate();
+    const handlePrint = () => {
+      reactToPrintFn();
+      navigate('/payment-success')
+    }
     
     return (
         <>
@@ -83,7 +89,7 @@ const reactToPrintFn = useReactToPrint({ contentRef });
             </div>
         </div>
        
-        <Button sx={{marginLeft:"1600px",marginTop:"30px"}} variant="contained" onClick={reactToPrintFn}>Print</Button>
+        <Button sx={{marginLeft:"1600px",marginTop:"30px"}} variant="contained" onClick={handlePrint}>Print</Button>
 
         </>
         
