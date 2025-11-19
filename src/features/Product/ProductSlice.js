@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import axios from 'axios';
 
 const initialState = {
   value: [],
@@ -9,9 +10,19 @@ const initialState = {
 
 
 export const fetchProducts = createAsyncThunk("fetchProducts", async () => {
-  const response = await fetch(`${import.meta.env.VITE_API_URL}`);
-  const data = await response.json();
-  return data.products.sort(() => Math.random() - 0.5);
+  try {
+    const response = await axios.get(`${import.meta.env.VITE_API_URL}`)
+
+
+    // const response = await fetch(`${import.meta.env.VITE_API_URL}`);
+    // const data = await response.json();
+    return response.data.products.sort(() => Math.random() - 0.5);
+
+  }catch(error){
+    console.error(error);
+  }
+ 
+  
 })
 
 
@@ -59,7 +70,7 @@ export const ProductSlice = createSlice({
         ) return true;
         else return false;
       })
-      state.furniture=furnitureProd;
+      state.furniture = furnitureProd;
 
     }
 

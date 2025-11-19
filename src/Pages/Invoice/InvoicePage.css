@@ -9,16 +9,19 @@
 }
 .invoiceContainer .invoiceTitle{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    gap: 300px;
     width: 830px;
     margin-bottom: 30px;
+    
 }
 .thanksContainer{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
+
 tr:nth-child(even) {
   background-color: #dddddd;
 }

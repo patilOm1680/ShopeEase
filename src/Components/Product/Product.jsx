@@ -14,6 +14,7 @@ import { Rating } from '@mui/material';
 import ProdTabs from '../Product Tabs/ProdTabs';
 import 'react-photo-view/dist/react-photo-view.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import {PRIMARY_COLOR,SECONDARY_COLOR} from "../../Constants/Colors"
 
 const Product = () => {
 
@@ -72,12 +73,12 @@ const Product = () => {
                         <img src={obj["images"][0]} alt="" />
                     </div>
                     <div className='btns'>
-                        <Button variant="contained" sx={{ backgroundColor: "#E6F0FE", fontWeight: "bold", paddingLeft: 1, color: "#2774AE", width: "230px", height: "50px" }} size="large" onClick={handleAdd}><ShoppingCartIcon sx={{ marginRight: 1 }} />
+                        <Button variant="contained" sx={{ backgroundColor: `${SECONDARY_COLOR}`, fontWeight: "bold", paddingLeft: 1, color: "#2774AE", width: "230px", height: "50px" }} size="large" onClick={handleAdd}><ShoppingCartIcon sx={{ marginRight: 1 }} />
                             {(isPresentInCart == true) ? "GO TO CART" : "ADD TO CART"}
                         </Button>
 
 
-                        <Button variant="contained" sx={{ backgroundColor: "#2774AE", fontWeight: "bold", paddingLeft: 1, width: "230px", height: "50px" }} size="large" onClick={handleBuy}><FlashOnIcon sx={{ marginRight: 1, marginLeft: 0 }} />BUY NOW </Button>
+                        <Button variant="contained" sx={{ backgroundColor: `${PRIMARY_COLOR}`, fontWeight: "bold", paddingLeft: 1, width: "230px", height: "50px" }} size="large" onClick={handleBuy}><FlashOnIcon sx={{ marginRight: 1, marginLeft: 0 }} />BUY NOW </Button>
                     </div>
                 </div>
 
