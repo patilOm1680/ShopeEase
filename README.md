@@ -66,7 +66,7 @@ ShopeEase/
 ## ⚙️ Installation
 
 ```
-git clone <your-repo-url>
+git clone git@github.com:patilOm1680/ShopeEase.git
 cd ShopeEase
 ```
 
