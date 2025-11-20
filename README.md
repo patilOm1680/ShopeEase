@@ -21,6 +21,7 @@ ShopeEase is designed as a lightweight online store interface where users can br
 - Product listing and filtering
 - Add/remove/update cart
 - Global Redux state
+- Search Products
 - Mock API data
 - Reciept generation
 - Mock Payment

@@ -65,7 +65,7 @@ const Cart = () => {
       case 0:
         return (
 
-          <div style={{ marginLeft: "27px", borderBottom: "1px dotted #aeb0af", paddingBottom: "10px" }}>
+          <div class="cartWrapperContainer">
             {cartItems.map((obj) => (
               <CartCard obj={obj} cartItems={cartItems} key={obj.id} />
             ))}
