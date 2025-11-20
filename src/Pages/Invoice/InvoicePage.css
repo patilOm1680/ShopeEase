@@ -62,3 +62,51 @@ th{
     
     font-size: 24px;
 }
+
+@media (max-width: 800px){
+    .invoiceContainer .invoiceTitle{
+        width: 100%;
+        gap: 100px;
+        justify-content: space-between;
+    }
+    #printBtn{
+    margin-right: 0px;
+    margin-bottom: 100px !important;
+}
+.invoiceContainer{
+    width: 80%;
+    padding-inline: 0px;
+    font-size: 18px;
+    margin-inline: 10px;
+    margin-left: 25px;
+}
+
+td,th{
+    text-align: center;
+    padding: 0px;
+    padding-inline: 3px;
+}
+
+.totalTd{
+    text-align: end;
+    padding: 0px;
+    padding-right: 4px;
+}
+.invoiceContainer .invoiceHeading{
+    font-size: 20px;
+    font-weight: bold;
+}
+th{
+    font-size: 18px;
+}
+.prodRow .imageTd{
+    width: auto !important;
+}
+/* .AllTd{
+    width: 500px;
+} */
+.totalTd span,.totalTd b{
+    
+    font-size: 18px;
+}
+}

@@ -108,4 +108,8 @@ ul{
         padding: 0px;
         width: 300px;
     }
+    .media img{
+        object-fit: cover;
+        height: 370px;
+    }
 }

@@ -89,7 +89,7 @@ const reactToPrintFn = useReactToPrint({ contentRef });
             </div>
         </div>
        
-        <Button sx={{marginLeft:"1600px",marginTop:"30px"}} variant="contained" onClick={handlePrint}>Print</Button>
+        <Button sx={{marginLeft:{md:"1600px",xs:"0px"},marginTop:"30px"}} variant="contained" onClick={handlePrint}>Print</Button>
 
         </>
         
