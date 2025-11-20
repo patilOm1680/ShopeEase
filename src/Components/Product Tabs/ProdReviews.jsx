@@ -25,7 +25,7 @@ function ProdReviews({ obj }) {
 
 
                 </div>
-                <Button variant="contained" sx={{ backgroundColor: "#2774AE", fontWeight: "bold", width: "160px", height: "35px" }} size="small"><CreateIcon sx={{ marginRight: "6px", marginLeft: "0px" }} />Write Review </Button>
+                <Button variant="contained" sx={{ backgroundColor: "#2774AE", fontWeight: "bold", width: "160px", height: "35px",display:{xs:"none",md:"inline"} }} size="small"><CreateIcon sx={{ marginRight: "6px", marginLeft: "0px" }} />Write Review </Button>
 
             </div>
             <div className='reviewContainerCard'>

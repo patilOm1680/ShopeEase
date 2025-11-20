@@ -42,8 +42,8 @@ const OrderSummary = () => {
   };
 
   return (
-    <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-      <Card sx={{ width: 450, transition: 'width 0.3s ease' }}>
+    <div className='SummaryContainer'>
+      <Card sx={{ width: {md:450,xs:"300px"}, transition: 'width 0.3s ease' }}>
         <CardHeader
           action={
             <div style={{ display: 'flex', alignItems: 'center' }}>

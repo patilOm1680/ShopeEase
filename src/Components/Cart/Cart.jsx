@@ -111,7 +111,7 @@ const Cart = () => {
                     <Step key={label} {...stepProps} >
                       <StepLabel {...labelProps} sx={{
                         ".MuiStepLabel-label": {
-                          fontSize: "1.4rem",
+                          fontSize: {xs:"1rem", md:"1.4rem"},
                         }
                       }}>{label}</StepLabel>
                     </Step>

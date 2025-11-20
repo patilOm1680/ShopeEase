@@ -94,6 +94,7 @@ ul{
 @media (max-width: 800px) {
     .productContainer{
         margin-inline: 0px;
+        width: 100%;
         flex-wrap: wrap;
     }
     .btns{
@@ -101,8 +102,10 @@ ul{
         justify-content: space-around;
     }
     .descContainer{
+        margin-top: 30px;
         border: none;
         margin-left: 0px;
-        padding-left: 0px;
+        padding: 0px;
+        width: 300px;
     }
 }
