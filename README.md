@@ -59,12 +59,12 @@ ShopeEase/
 ```
 
 ## 🧰 Tech Stack
-- React.js
-- Material UI (MUI), 
-- Redux Toolkit
-- react-to-print (Library)
-- react-photo-view (Library)
-- Vanilla CSS
+- [React.js](https://react.dev/learn)
+- [Material UI (MUI)](https://mui.com/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [react-to-print (Library)](https://www.npmjs.com/package/react-to-print)
+- [react-photo-view (Library)](https://www.npmjs.com/package/react-photo-view)
+- [Vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## ⚙️ Installation
 
@@ -99,6 +99,3 @@ Uses Dummy API- https://dummyjson.com/products?limit=100
 
 ## 📄 License
 No license right now.
-
-
-
