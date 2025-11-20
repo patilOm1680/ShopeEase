@@ -12,7 +12,7 @@ const InvoiceCard = ({ obj,index }) => {
                     <td  className='imageTd'>
                         <img src={obj.thumbnail} alt="" className='invoiceImg'/>
                     </td>
-                    <td className='AllTd'>{obj.title}</td>
+                    <td>{obj.title}</td>
                     <td>{quantityArr[index]}</td>
                     <td>&#8377;{Math.floor(obj.price * 88)}</td>
                 </tr>

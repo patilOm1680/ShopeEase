@@ -62,7 +62,9 @@ ShopeEase/
 - React.js
 - Material UI (MUI), 
 - Redux Toolkit
-- CSS
+- react-to-print (Library)
+- react-photo-view (Library)
+- Vanilla CSS
 
 ## ⚙️ Installation
 
