@@ -1,4 +1,4 @@
-# 🛒 ShopeEase | Ecommerce Web App
+# 🛒 ShopeEase | Ecommerce Web App - [(Link)](https://shope-ease-nu.vercel.app/)
 
 ShopeEase is an E-commerce web application built using **React**, **Redux Toolkit**, and **Vite**. It provides a clean UI, product browsing, cart management, and a modular structure suitable for scaling into a full-featured shopping platform.
 
@@ -67,6 +67,8 @@ ShopeEase/
 
 ```
 git clone git@github.com:patilOm1680/ShopeEase.git
+```
+```
 cd ShopeEase
 ```
 
@@ -93,7 +95,7 @@ Uses Dummy API- https://dummyjson.com/products?limit=100
 
 
 ## 📄 License
-No license ;
+No license right now.
 
 
 
