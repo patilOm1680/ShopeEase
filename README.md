@@ -15,7 +15,7 @@ ShopeEase is an E-commerce web application built using **React**, **Redux Toolki
 - [License](#-license)
 
 ## 📝 Introduction
-ShopeEase is designed as a lightweight online store interface where users can browse products, filter them by category, view details, and manage a shopping cart.
+ShopeEase is Modern, Responsive online Ecommerce store where users can browse, search products(Clothes, Electronics, Furniture) and manage a shopping cart.
 
 ## ✨ Features
 - Product listing and filtering
@@ -99,3 +99,4 @@ Uses Dummy API- https://dummyjson.com/products?limit=100
 
 ## 📄 License
 No license right now.
+
