@@ -20,6 +20,7 @@ const Product = () => {
 
     const cartItems = useSelector((state) => state.cartItems.value)
     const [isPresentInCart, setIsPresentInCart] = useState(false);
+    
     useEffect(() => {
         const isAlreadyPresent = cartItems.filter((ele) => ele.id == obj.id);
         (isAlreadyPresent.length == 0) ? setIsPresentInCart(false) : setIsPresentInCart(true);

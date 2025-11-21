@@ -60,7 +60,7 @@ const CartCard=({ obj })=> {
 
   const handleCardClick = () => {
     console.log(`User opened the "${obj.title}" product from cart.`)
-    navigate('/product', { state: { obj, price, originalPrice, percentOff } });
+    navigate(`/product/${obj.id}`, { state: { obj, price, originalPrice, percentOff } });
   };
 
   // function randomNumberGenerate(min, max) {

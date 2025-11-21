@@ -36,7 +36,7 @@ const SearchBar=()=> {
       const price = num.toLocaleString('en-US');
       const percentOff = Math.floor(selectedObj.discountPercentage);
       const originalPrice = Math.floor((num * 100) / (100 - percentOff));
-      navigate('/product', { state: { obj: selectedObj,price, originalPrice, percentOff } })
+      navigate(`/product/${selectedObj.id}`, { state: { obj: selectedObj,price, originalPrice, percentOff } })
     }else{
         navigate('/searchResults',{state:{filteredData:selectedProd}})
     }
