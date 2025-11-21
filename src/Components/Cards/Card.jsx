@@ -31,7 +31,7 @@ const CardComponent = ({ obj }) => {
 
   const handleCardClick = () => {
     console.log(`User clicked on the "${obj.title}" product`)
-    navigate('/product', { state: { obj, price, originalPrice, percentOff } });
+    navigate(`/product/${obj.id}`, { state: { obj, price, originalPrice, percentOff } });
   };
   // function randomNumberGenerate(min, max) {
   //   return Math.floor(Math.random() * (max - min + 1) + min);
