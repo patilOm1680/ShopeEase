@@ -11,15 +11,18 @@ const initialState = {
 
 export const fetchProducts = createAsyncThunk("fetchProducts", async () => {
   try {
-    // if(localStorage.getItem("products")==null){
-
-    // }
-    const response = await axios.get(`${import.meta.env.VITE_API_URL}`)
+    if(localStorage.getItem("products")==null){
+         const response = await axios.get(`${import.meta.env.VITE_API_URL}`)
 
 
     // const response = await fetch(`${import.meta.env.VITE_API_URL}`);
     // const data = await response.json();
+    localStorage.setItem("allProducts",JSON.stringify(response.data));
     return response.data.products.sort(() => Math.random() - 0.5);
+    }else{
+      return JSON.parse(localStorage.getItem("allProducts"));
+    }
+   
 
   }catch(error){
     console.error(error);
