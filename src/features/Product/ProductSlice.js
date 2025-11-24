@@ -11,6 +11,9 @@ const initialState = {
 
 export const fetchProducts = createAsyncThunk("fetchProducts", async () => {
   try {
+    // if(localStorage.getItem("products")==null){
+
+    // }
     const response = await axios.get(`${import.meta.env.VITE_API_URL}`)
 
 
