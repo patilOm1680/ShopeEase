@@ -13,6 +13,7 @@ import PaymentForm from './Components/Payment/PaymentForm.jsx'
 import SuccessOrder from './Components/SuccessOrder/SuccessOrder.jsx'
 import SearchResultPage from './Pages/SearchResultPage/SearchResultPage.jsx'
 import InvoicePage from './Pages/Invoice/InvoicePage.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 
 
 const App = () => {
@@ -46,6 +47,7 @@ const App = () => {
         <Route path='/invoice' element={<InvoicePage />} />
       </Routes>
 
+      <Footer/>
     </div>
   )
 }

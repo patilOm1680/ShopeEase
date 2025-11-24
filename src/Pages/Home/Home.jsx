@@ -66,7 +66,7 @@ const Home = () => {
               return null;
             })}
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       }
 

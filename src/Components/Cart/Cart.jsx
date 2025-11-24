@@ -65,7 +65,7 @@ const Cart = () => {
       case 0:
         return (
 
-          <div class="cartWrapperContainer">
+          <div className="cartWrapperContainer">
             {cartItems.map((obj) => (
               <CartCard obj={obj} cartItems={cartItems} key={obj.id} />
             ))}
