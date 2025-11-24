@@ -20,11 +20,12 @@ ShopeEase is Modern, Responsive online Ecommerce store where users can browse, s
 ## ✨ Features
 - Product listing and filtering
 - Add/remove/update cart
-- Global Redux state
-- Search Products
-- Mock API data
 - Reciept generation
+- Search Products (by title)
+- LocalStorage to store the data
+- Global Redux state
 - Mock Payment
+- Mock API data
 
 ## 📂 Project Structure
 
