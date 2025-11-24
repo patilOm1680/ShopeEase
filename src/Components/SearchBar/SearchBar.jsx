@@ -28,13 +28,16 @@ const SearchBar=()=> {
     const selectedProd = allProducts.filter((obj) => {
       return obj.title.toLowerCase().includes(value.toLowerCase());
     });
-    if(selectedProd.length==0) return;
+    // if(selectedProd.length==0) return;
     if (selectedProd.length == 1) {
       console.log(value)
       const selectedObj = selectedProd[0];
       const num = Math.floor(selectedObj.price * 88);
+
       const price = num.toLocaleString('en-US');
       const percentOff = Math.floor(selectedObj.discountPercentage);
+
+
       const originalPrice = Math.floor((num * 100) / (100 - percentOff));
       navigate(`/product/${selectedObj.id}`, { state: { obj: selectedObj,price, originalPrice, percentOff } })
     }else{

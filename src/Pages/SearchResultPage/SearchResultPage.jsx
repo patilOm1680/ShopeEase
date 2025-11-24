@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import CardComponent from '../../Components/Cards/Card';
 import "./SearchResultPage.css"
 import CardSkeleton from '../../Components/skeleton/CardSkeleton';
+import noSearchFound from "../../assets/searchResult/noSearchFound.png"
 
 const SearchResultPage = () => {
     const location = useLocation();
@@ -19,12 +20,18 @@ const SearchResultPage = () => {
     return (
         <>
             {
-                (loading) ? <CardSkeleton /> : <div className='searchResultContainer'>
+                (loading) ? <CardSkeleton /> : 
+                
+                (filteredData.length==0)?<div className='searchResultNotFoundContainer'> <img src={noSearchFound} alt="no Search result" className='searchResultNotFoundImg' /></div>:
+                <div className='searchResultContainer'>
+                    
+                    
                     {
                         filteredData.map((obj) => {
                             return <CardComponent obj={obj} key={obj.id} />
                         })
                     }
+                    
                 </div>
             }
 
